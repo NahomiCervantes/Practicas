@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios En HTML</title>
+</head>
+<body>
+    <h1>Formularios En HTML</h1>
+    <form action="#" method="get" name="frmInicio" id="frmInicio">
+       <!--Nombre-->
+        <label for="txtNombre"> Nombre:</label>
+        <input type="text" name="txtNombre" id="txtNombre" required="required">
+        <br><br>
+        
+        <!--Apellidos-->
+        <label for="Apellidos"> Apellidos:</label>
+        <input type="text" name="txtApellido" id="txtApellido" required="required">
+        <br><br>
+        
+        <!--Opciones-->
+        <label for="Check1">
+            <input type="CheckBox" name="Check1" id="Check1"> Opcion 1
+        </label>
+        <label for="Check2">
+            <input type="CheckBox" name="Check2" id="Check2"> Opcion 2
+        </label>
+        <label for="Check3">
+            <input type="CheckBox" name="Check3" id="Check2"> Opcion 3
+        </label>
+        <br><br>
+        
+        <!--Genero-->
+        <label for="Masculino">
+            <input type="radio" name="Genero" id="Genero" value="M"> Masculino
+        </label>
+        <label for="Femenino">
+            <input type="radio" name="Genero" id="Genero" value="F"> Femenino
+        </label>
+        <br><br>
+        
+        <!--Fecha-->
+        <label for="Fecha"> Fecha:</label>
+        <input type="date" name="Fecha" id="Fecha">
+        <br><br>
+        
+        <!--Fecha_Hora-->
+        <label for="Fecha-Hora"> Fecha-Hora:</label>
+        <input type="datetime-local" name="Fecha-Hora" id="FechaHora">
+        <br><br>
+        
+        <!--Oculto-->
+        <input type="hidden" name="Oculta" value="LoQueSea">
+        <br><br>
+        
+        <!--Contraseña-->
+        <label for="pwdNaho"> Contraseña:</label>
+        <input type="password" name="pwdNaho" id="pwdNaho">
+        <br><br>
+        
+        <!--Correo-->
+        <label for="Correo"> Correo:</label>
+        <input type="email" name="Correo" id="Correo">
+        <br><br>
+        
+        <!--Numero-->
+        <label for="Numero"> Numero</label>
+        <input type="number" name="Numero" id="Numero">
+        <br><br>
+        
+        <!--Limpiar-->
+        <input type="reset" value="Limpiar">
+        <!--Enviar-->
+        <input type="submit" value="Enviar Formulario">
+    </form>
+</body>
+</html>

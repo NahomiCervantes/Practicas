@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CCS - Hojas De Estilo En Cascada  Documento</title>
+    
+    <style>
+        /* Reglas Tipo Etiqueta */
+        body
+        {
+            font-family:sans-serif;
+        }
+        
+        p
+        {
+            line-height: 20px;
+        }
+        
+        /* Reglas Tipo Id */
+        /* IMPORTANTE: En HTML Se Recomienda Utilizar Solo Un ID A La Vez, Sin Repetir */
+        #subtitulo
+        {
+            color:darkorchid;
+        }
+        
+        #maintitle
+        {
+            /* color:cornflowerblue; */
+            /* color: rgb(10,100,100); */
+             color: #3366cc;
+        }
+        
+        /* Reglas Tipo Clase */
+        .articulo
+        {
+            font-family: courier;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .articulo>header
+        {
+            font-weight:bold;
+            font-size: 1.5em;
+            /* pt: points, px: pixels, %: percent, em:? */
+            text-align: center;
+        }
+        
+        .contenido
+        {
+            line-height: 1.5em;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="maintitle">CCS - Hojas De Estilo En Cascada Documento</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quibusdam, facilis praesentium quia recusandae aperiam, neque placeat quo, quidem nostrum ullam. Molestiae dolores in deleniti nemo magni eveniet repudiandae, error.</p>
+    
+    <h2 id="subtitulo">Ejemplo De ID</h2>
+    
+    <section id="articulos">
+        <article class="articulo">
+            <header class="titulo">Titulo Del Articulo 1</header>
+            <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quod, non velit nobis voluptas modi! Accusamus dolorum optio ipsum, quas, vero cumque iure dolor nulla quisquam nostrum. Quis, voluptatibus, id.</p>
+            <button class="readmore">Leer Más..</button>
+        </article>
+        
+        <article class="articulo">
+            <header class="titulo">Titulo Del Articulo 2</header>
+            <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quod, non velit nobis voluptas modi! Accusamus dolorum optio ipsum, quas, vero cumque iure dolor nulla quisquam nostrum. Quis, voluptatibus, id.</p>
+            <button class="readmore">Leer Más..</button>
+        </article>
+        
+        <article class="articulo">
+            <header>Titulo Del Articulo 3</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quod, non velit nobis voluptas modi! Accusamus dolorum optio ipsum, quas, vero cumque iure dolor nulla quisquam nostrum. Quis, voluptatibus, id.</p>
+            <button>Leer Más..</button>
+        </article>
+    </section>
+</body>
+</html>
