@@ -1,3 +1,10 @@
+/* Selector Universal*/
+/* * {
+    border: 1px solid purple;
+    padding: 10px;
+    margin: 10px; 
+} */
+
 .container {
     width: 920px;
     margin: 0 auto;
@@ -10,12 +17,59 @@
 
 #encabezado {
     height: 150px;
-    background-color: #3fcd8b;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
 }
+
+#encabezado figure {
+    margin: 0;
+}
+
+#titulos * {
+    margin: 0;
+}
+
+#encabezado h1 { font-size: 1.2em; }
+#encabezado h2 { font-size: 1em; }
+#encabezado h3 { font-size: 0.9em; }
+#encabezado h4 { font-size: 0.8em; }
 
 #menu {
     height: 50px;
     background-color: #e26565;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li{
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu>ul>li {
+    display: inline-block;
+}
+
+/* Quita El Subrayado */
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu>ul>li>a {
+    padding: 10px;
+    background-color: darkgray;
+}
+
+#menu>ul>li>a:hover {
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+#menu li ul {
+    display: none;
 }
 
 #contenido {
