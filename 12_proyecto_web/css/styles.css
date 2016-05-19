@@ -90,18 +90,37 @@
     box-shadow: 0 0 15px darkgray;
 }
 
-#nota-importante img{
+#nota-importante img {
     border: 10px solid white;
 }
 /*NOTA IMPORTANTE FIN*/
 
+/*NOTA SECUNDARIA INICIO*/
 #notas-secundarias {
-    height: 300px;
+    min-height: 300px;
     width: 700px;
     display: inline-block;
     float: left;
     background-color: #1b8fba;
 }
+
+#notas-secundarias article {
+    display: flex;
+}
+
+#notas-secundarias figure {
+    margin: 0;
+    position: relative;
+}
+
+#notas-secundarias figure span {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+/*NOTA SECUNDARIA FIN*/
 
 #publicidad {
     height: 300px;
