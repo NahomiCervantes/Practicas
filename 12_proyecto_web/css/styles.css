@@ -5,6 +5,12 @@
     margin: 10px; 
 } */
 
+/* RESET CSS*/
+h1,h2,h3,h4,h5,h6,figure,p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 920px;
     margin: 0 auto;
@@ -84,7 +90,6 @@
 /*NOTA IMPORTANTE INICIO*/
 #nota-importante {
     height: 360px;
-    background-color: #934fd8;
     margin: 20px 0;
     /*box-shadow: horizontal vertical blur color*/
     box-shadow: 0 0 15px darkgray;
@@ -101,24 +106,61 @@
     width: 700px;
     display: inline-block;
     float: left;
-    background-color: #1b8fba;
 }
 
 #notas-secundarias article {
     display: flex;
 }
 
-#notas-secundarias figure {
-    margin: 0;
+.imagen-nota-secundaria {
     position: relative;
 }
 
-#notas-secundarias figure span {
+.sombra-imagen {
+    box-shadow: 0px 0px 5px darkgray;
+}
+
+.imagen-nota-secundaria span {
     position: absolute;
     top: 10px;
     left: -5px;
     padding: 5px 10px;
     background-color: lightgray;
+}
+
+.titulo-nota-secundaria {
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+}
+
+.cuerpo-nota-secundaria {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.intro-nota-secundaria {
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.boton {
+    background: #AA3521;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
+.boton>div {
+    padding: 1px 20px;
+    border: 1px solid rgba(255,255,255,.7);
+}
+
+.boton p {
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.1em;
 }
 /*NOTA SECUNDARIA FIN*/
 
