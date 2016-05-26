@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6,figure,p {
     background-repeat: no-repeat;
     background-position: bottom;
     padding-bottom: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .imagen-nota-secundaria {
@@ -173,7 +173,11 @@ h1,h2,h3,h4,h5,h6,figure,p {
     width: 220px;
     display: inline-block;
     float: right;
-    background-color: #ea75ff;
+}
+
+#publicidad img {
+    width: 220px;
+    margin: 5px;
 }
 
 #pie {
